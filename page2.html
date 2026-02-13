@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free Fire Squad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url("Page2.jpg") no-repeat center center/cover;
+    color:white;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.75);
+    min-height:100vh;
+    padding:50px 20px;
+}
+
+/* 🔥 TOP TITLE */
+.title{
+    text-align:center;
+    font-size:75px;
+    font-weight:bold;
+    letter-spacing:6px;
+    margin-bottom:60px;
+}
+
+.title span{
+    color:yellow;   /* I yellow */
+}
+
+/* 🔥 CARD SECTION */
+.card-container{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+    margin-bottom:80px;
+}
+
+/* 🔥 HEAVY 3D CARD */
+.card{
+    width:340px;
+    border-radius:18px;
+    overflow:hidden;
+    background:rgba(0,0,0,0.6);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.9),
+        0 10px 25px rgba(0,0,0,0.8);
+    transform:perspective(1200px) rotateY(0deg);
+    transition:transform 0.4s ease;
+}
+
+.card:hover{
+    transform:perspective(1200px) rotateY(10deg) translateY(-15px);
+}
+
+/* IMAGE FULL – NO CROP */
+.card img{
+    width:100%;
+    height:420px;
+    object-fit:contain;  /* No crop */
+    background:black;
+}
+
+/* STATS – LEFT SIDE, BACKGROUND BEHIND TEXT */
+.stats{
+    background:rgba(0,0,0,0.8);
+    padding:20px;
+    text-align:left;
+    font-size:18px;
+    line-height:2;
+}
+
+.stats span{
+    color:#ff3c00;
+    font-weight:bold;
+}
+
+/* 🔥 EXPERIENCE SECTION */
+.experience{
+    max-width:950px;
+    margin:auto;
+    margin-bottom:60px;
+}
+
+.experience h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.experience ul{
+    font-size:20px;
+    line-height:2.2;
+    padding-left:25px;
+}
+
+/* 🔥 FINAL BUTTON */
+.website-btn{
+    text-align:center;
+    margin-top:40px;
+}
+
+.website-btn a{
+    text-decoration:none;
+    padding:18px 50px;
+    font-size:22px;
+    font-weight:bold;
+    background:#ff3c00;
+    color:white;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.website-btn a:hover{
+    background:#cc2f00;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- TITLE -->
+    <div class="title">
+        FREE F<span>I</span>RE
+    </div>
+
+    <!-- 3D CARDS -->
+    <div class="card-container">
+
+        <div class="card">
+            <img src="Ronit.png">
+            <div class="stats">
+                Eliminations: <span>1287</span><br>
+                K/D Ratio: <span>4.6</span><br>
+                Victory: <span>92</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Dinesh.png">
+            <div class="stats">
+                Eliminations: <span>1542</span><br>
+                K/D Ratio: <span>3.9</span><br>
+                Victory: <span>110</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Hemant.png">
+            <div class="stats">
+                Eliminations: <span>1135</span><br>
+                K/D Ratio: <span>3.4</span><br>
+                Victory: <span>81</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- EXPERIENCE POINTS -->
+    <div class="experience">
+        <h2>WHAT YOU WILL EXPERIENCE</h2>
+        <ul>
+            <li>Intense 10 Minute Battle Royale Matches</li>
+            <li>High Quality Graphics and Realistic Effects</li>
+            <li>Unique Character Abilities and Skills</li>
+            <li>Competitive Ranked Mode Battles</li>
+            <li>Custom Weapon Skins and Loadouts</li>
+            <li>Strategic Squad Coordination Gameplay</li>
+            <li>Dynamic Safe Zone Survival Challenges</li>
+            <li>Thrilling Victory and Booyah Moments</li>
+        </ul>
+    </div>
+
+    <!-- FINAL BUTTON -->
+    <div class="website-btn">
+        <a href="https://ff.garena.com" target="_blank">
+            FF WEB PAGE
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
